@@ -4,10 +4,14 @@ import { GiFlowerPot } from "react-icons/gi";
 import { usePrefetchTreetments } from "../treatments/hooks/useTreatments";
 
 import { BackgroundImage } from "@/components/common/BackgroundImage";
+import { useEffect } from "react";
 
 export function Home() {
   usePrefetchTreetments()
-  
+  useEffect(() => {
+    console.log("monthYear useEffect");
+  }, []);
+
   return (
     <Stack textAlign="center" justify="center" height="84vh">
       <BackgroundImage />

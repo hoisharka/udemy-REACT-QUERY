@@ -15,6 +15,7 @@ import { useAppointments } from "./hooks/useAppointments";
 import { UserAppointments } from "@/components/user/UserAppointments";
 
 export function Calendar() {
+  console.log("Calendar");
   const currentDate = dayjs();
 
   const { appointments, monthYear, updateMonthYear, showAll, setShowAll } =
